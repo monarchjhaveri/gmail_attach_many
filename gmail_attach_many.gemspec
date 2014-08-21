@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["monarchjhaveri@gmail.com"]
   spec.summary       = "Attach multiple files to messages"
   spec.description   = "Easily attach many files to Gmail messages. If the files total more than 25 MB, they will be sorted alphabetically and distributed amongst multiple new messages, which you can then send."
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/monarchjhaveri/gmail_attach_many"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

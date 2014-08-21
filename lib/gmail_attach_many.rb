@@ -8,9 +8,9 @@ module GmailAttachMany
         m.to recipientString
       end
     end
-    def messages_subject (subjectString)
+    def messages_subject= (subjectString)
       self.each do |m|
-        m.subject subjectString
+        m.subject = subjectString
       end
     end
     def messages_number
@@ -18,8 +18,8 @@ module GmailAttachMany
         m.subject = m.subject + "#{m+1}/#{self.length+1}"
       end
     end
-    def messages_subject_and_number (subjectString)
-      self.messages_subject (subjectString)
+    def messages_subject_and_number= (subjectString)
+      self.messages_subject = (subjectString)
       self.messages_number
     end
   end

@@ -22,12 +22,13 @@ To use:
 
 ```
 gmail = Gmail.connect('username', 'password')
-emailArray = gmail.attach_many('./images/*.jpg') #attach all .jpgs in the ./images/ folder. Results return in an array containing 1+ messages with attachments of up to 25MB in total size
-emailArray.messages_to 'recipient@domain.com' # set the recipient of all messages in the array
-emailArray.messages_subject 'The Subject Line Goes Here' #set the subject line for all messages in the array
-emailArray.messages_number #number the messages, i.e. "Email 1/3", "Email 2/3", "Email 3/3"
-# or, you can do emailArray.messages_subject_and_number 'The Subject Line Goes Here'
-messages.
+emailArray = gmail.attach_many('./images/*.jpg')
+emailArray.messages_to = 'recipient@domain.com' 
+emailArray.messages_subject = 'The Subject Line Goes Here' 
+#number the messages, i.e. "Email 1/3", "Email 2/3", "Email 3/3"
+emailArray.messages_number 
+# OR, you can do this instead for the same effect
+emailArray.messages_subject_and_number 'The Subject Line Goes Here'
 ```
 
 
