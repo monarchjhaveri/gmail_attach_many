@@ -1,3 +1,4 @@
+require "gmail"
 require "gmail_attach_many/version"
 
 module GmailAttachMany
